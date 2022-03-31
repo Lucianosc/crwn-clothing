@@ -11,7 +11,7 @@ const defaultFormFields = {
     confirmedPassword: '',
 }
 
-function SingUpForm() {
+function SignUpForm() {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { name, email, password, confirmedPassword } = formFields;
 
@@ -34,7 +34,7 @@ function SingUpForm() {
             resetFormFields();
 
         } catch (error) {
-            if (error.code == 'auth/email-already-in-use') {
+            if (error.code === 'auth/email-already-in-use') {
                 alert('email already in use');
             } else {
                 console.log(error);
@@ -98,4 +98,4 @@ function SingUpForm() {
     );
 }
 
-export default SingUpForm;
+export default SignUpForm;
