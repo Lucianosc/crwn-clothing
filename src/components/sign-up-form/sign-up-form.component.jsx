@@ -49,7 +49,7 @@ function SignUpForm() {
     }
 
     return (
-        <div className='sign-un-container'>
+        <div className='sign-up-container'>
             <h2>Sign Up</h2>
             <span>Sign up with your email and password</span>
             <form onSubmit={handleSubmit}>
